@@ -1,0 +1,31 @@
+/***Header***/
+
+.navigation {
+  margin-top: 20px;
+  background-color: #ccc;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  border-radius: 50%;
+  font-size: 2.4rem;
+  margin-right: 100px;
+  font-family: "Agbalumo", sans-serif;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__item {
+    padding: 15px 20px;
+    &:hover {
+      background-color: #bbb;
+    }
+  }
+}

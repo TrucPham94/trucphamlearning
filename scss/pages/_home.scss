@@ -1,0 +1,52 @@
+/*Homepage CSS*/
+
+/*Website*/
+.sub-title {
+  margin-top: 10px;
+  margin-left: -155px;
+  padding: 5px 0 10px 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  //   position: absolute;
+  &::before {
+    content: "";
+    width: 120px;
+    height: 1px;
+    position: relative;
+    border: solid;
+    top: 28px;
+    left: 155px;
+  }
+}
+
+.main-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.website-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5px;
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__desc {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4;
+  }
+}
