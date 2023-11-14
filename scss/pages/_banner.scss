@@ -1,5 +1,11 @@
 /*Banner*/
 .banner {
-  display: flex;
+  display: block;
   object-fit: cover;
+  margin: 0 auto;
+
+  &_img {
+    // max-height: 400px;
+    width: 100%;
+  }
 }
