@@ -1,19 +1,45 @@
-/***Website CSS***/
-.website-title {
-  margin-top: 10px;
-  font-size: 2.7rem;
-  font-weight: 700;
-  color: blue;
+.row {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.website-part {
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rebeccapurple;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+  flex-direction: column;
+  width: 33.33%;
+  min-height: 200px;
 
-.subtitle {
-  font-weight: 600;
-  padding: 10px 0;
+  &__title {
+    line-height: 1.6;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
 
   &__desc {
-    line-height: 1.4;
+    line-height: 1.6;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    // Clip text
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 3);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__link {
+    padding: 10px 20px;
+    font-weight: 600;
+    &:hover {
+      background: #ccc;
+    }
   }
 }

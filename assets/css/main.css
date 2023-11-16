@@ -160,6 +160,12 @@ a {
   margin: 0 auto;
 }
 
+.bold-text {
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /***Header***/
 .navigation {
   margin-top: 20px;
@@ -173,10 +179,11 @@ a {
 }
 
 .logo {
-  border-radius: 50%;
+  display: block;
   font-size: 2.4rem;
   margin-right: 100px;
   font-family: "Agbalumo", sans-serif;
+  cursor: pointer;
 }
 
 .nav-bar {
@@ -314,23 +321,93 @@ a {
   object-fit: cover;
 }
 
-/***Website CSS***/
-.website-title {
-  margin-top: 10px;
-  font-size: 2.7rem;
-  font-weight: 700;
-  color: blue;
+.row {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.website-part {
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rebeccapurple;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  width: 33.33%;
+  min-height: 200px;
+}
+.website-part__title {
+  line-height: 1.6;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.website-part__desc {
+  line-height: 1.6;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 3);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.website-part__link {
+  padding: 10px 20px;
+  font-weight: 600;
+}
+.website-part__link:hover {
+  background: #ccc;
 }
 
-.subtitle {
-  font-weight: 600;
-  padding: 10px 0;
+.inner-website {
+  display: flex;
+  gap: 30px;
 }
-.subtitle__desc {
-  line-height: 1.4;
+
+.sidebar {
+  width: 30%;
+  background-color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.list-content {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.list-content__item {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+  background-color: #555;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.list-content__item:hover {
+  background-color: #777;
+}
+
+.content {
+  margin: 0 150px 10px 10px;
+  text-align: justify;
+  flex-grow: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  line-height: 1.9;
+  text-indent: 30px;
+}
+
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
