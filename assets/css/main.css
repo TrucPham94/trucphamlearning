@@ -401,6 +401,7 @@ a {
   box-sizing: border-box;
   line-height: 1.9;
   text-indent: 30px;
+  min-width: 70%;
 }
 
 .tab-content {
@@ -408,6 +409,21 @@ a {
 }
 .tab-content.active {
   display: block;
+}
+
+.challenge-title {
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 1.6;
+}
+
+.challenge-img {
+  width: 100%;
+}
+
+.challenge-desc {
+  line-height: 1.8;
+  font-size: 1.7rem;
 }
 
 /*# sourceMappingURL=main.css.map */

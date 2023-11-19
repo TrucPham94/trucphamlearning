@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP94 Learning</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Sora:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css link again -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="#" class="logo">FredStar</a>
+          <ul class="nav-bar">
+            <li class="nav-bar__item">
+              <a href="./index.html">Trang chủ</a>
+            </li>
+            <li class="nav-bar__item">
+              <a href="./website.html">Website</a>
+            </li>
+            <li class="nav-bar__item">
+              <a href="./knowledge.html">Kiến Thức</a>
+            </li>
+            <li class="nav-bar__item">
+              <a href="./challenge.html">100Days For Kotlin Challenge</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Layout for this website -->
+
+    <!-- Main content -->
+    <div class="inner-website">
+      <div class="sidebar">
+        <ul class="list-content">
+          <li class="list-content__item" onclick="showContent('tab1')">
+            Day 1
+          </li>
+          <li class="list-content__item" onclick="showContent('tab2')">
+            Day 2
+          </li>
+          <li class="list-content__item" onclick="showContent('tab3')">
+            Day 3
+          </li>
+          <li class="list-content__item" onclick="showContent('tab4')">
+            Day 4
+          </li>
+          <li class="list-content__item" onclick="showContent('tab5')">
+            Day 5
+          </li>
+          <li class="list-content__item" onclick="showContent('tab6')">
+            Day 6
+          </li>
+          <li class="list-content__item" onclick="showContent('tab7')">
+            Day 7
+          </li>
+          <li class="list-content__item" onclick="showContent('tab8')">
+            Day 8
+          </li>
+          <li class="list-content__item" onclick="showContent('tab9')">
+            Day 9
+          </li>
+          <li class="list-content__item" onclick="showContent('tab10')">
+            Day 10
+          </li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <!-- Day 1 -->
+        <div id="tab1Content" class="tab-content active">
+          <p class="challenge-title">Cài Android Studio</p>
+          <p class="challenge-desc">
+            Hôm nay đúng là một ngày làm quen lại với mọi thứ. Cài android
+            studio, khi set up máy ảo thì phát hiện mình chưa bật VTx, lật đật
+            tắt máy, ấn esc --> F10 (HP Pavillion), để mở VTx
+          </p>
+          <p class="challenge-desc">
+            Kiếp nạn thực sự là cài máy ảo xong, vẫn không chạy nổi... Tôi đang
+            không biết lỗi gì luôn!
+          </p>
+          <img
+            class="challenge-img"
+            src="./assets/img/100days/day1.png"
+            alt="day1-challenge"
+          />
+        </div>
+        <!-- Day 2 -->
+        <div id="tab2Content" class="tab-content">
+          <p class="challenge-title">
+            Chịu! Đành kết nối qua điện thoại android
+          </p>
+          <p class="challenge-desc">
+            Kết nối mãi không được với máy ảo, nên đành lấy cái điện thoại cùi
+            bắp ra để kết nối! Thế là day2 bắt đầu!
+          </p>
+          <img
+            src="./assets/img/100days/day2-1.png"
+            alt="day2-1"
+            class="challenge-img"
+          />
+          <p class="challenge-title">Khai báo biến trong Kotlin</p>
+          <p class="challenge-desc">
+            Trong Kotlin, không cần phải xác định Data Type (Kiểu dữ liệu) trước
+            cho biến. Dựa vào giá trị được gán mà Kotlin sẽ xác định Data Type
+            của biến đó.
+          </p>
+          <p class="challenge-desc">Có 2 cách:</p>
+          <p class="challenge-desc">
+            Dùng <span class="bold-text">val</span>: Cách này được dùng khi biến
+            được khai báo và gán giá trị 1 lần , không được gán lại lần nữa. Có
+            thể ứng dụng cho các biến là hằng số.
+          </p>
+          <p class="challenge-desc">
+            Dùng <span class="bold-text">var</span>: ngược lại với val, var được
+            khai báo và gán lại giá trị
+          </p>
+        </div>
+        <div id="tab3Content" class="tab-content">
+          <p class="challenge-desc">Nội dung 3</p>
+        </div>
+        <div id="tab4Content" class="tab-content">
+          <p class="challenge-desc">Nội dung 4</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showContent(tabName) {
+        // Ẩn tất cả các tab-content
+        var tabContents = document.querySelectorAll(".tab-content");
+        tabContents.forEach(function (tabContent) {
+          tabContent.classList.remove("active");
+        });
+
+        // Hiển thị tab-content tương ứng với tabName
+        var activeTabContent = document.getElementById(tabName + "Content");
+        activeTabContent.classList.add("active");
+      }
+    </script>
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <div class="contact">
+        <p class="footer__title">Địa chỉ liên lạc</p>
+        <p class="contact__desc">Số điện thoại: 0966.xxx.xxx</p>
+        <p class="contact__desc">Địa chỉ mail: xxxx@gmail.com</p>
+      </div>
+      <div class="quick-link">
+        <p class="footer__title">Liên kết nhanh</p>
+        <p class="quick-link__desc">Liên kết 1</p>
+        <p class="quick-link__desc">Liên kết 1</p>
+      </div>
+      <div class="private">
+        <p class="footer__title">Chính sách riêng tư</p>
+        <p class="private-content__desc">
+          <a href="#">Link chính sách riêng tư</a>
+        </p>
+      </div>
+      <div class="web-count">
+        <p class="footer__title">Thống Kê Trang Web</p>
+        <p class="web-count__desc">Số lượng truy cập</p>
+        <p class="web-count__number web-count__desc">123.456.789</p>
+      </div>
+    </div>
+    <!-- js -->
+  </body>
+</html>
